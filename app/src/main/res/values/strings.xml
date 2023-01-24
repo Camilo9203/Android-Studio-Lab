@@ -2,4 +2,6 @@
     <string name="app_name">Matemáticas Infantiles</string>
     <string name="btn_login">Ingresar</string>
     <string name="name_hint">Nombre completo</string>
+    <string name="deportes">Deportes</string>
+    <string name="videojuegos">Videojuegos</string>
 </resources>
