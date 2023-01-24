@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         
         val textLogin: TextView = findViewById(R.id.textTitle)
         textLogin.setOnClickListener(this)
-        
-        
     }
 
     override fun onStart() {
