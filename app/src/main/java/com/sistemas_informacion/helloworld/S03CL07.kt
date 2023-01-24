@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
+import android.widget.RadioButton
 import android.widget.Toast
 
 class S03CL07 : AppCompatActivity() {
@@ -30,6 +31,24 @@ class S03CL07 : AppCompatActivity() {
                     } else {
                         Toast.makeText(this, "Se desmarco videojuegos", Toast.LENGTH_LONG).show()
                     }
+                }
+            }
+        }
+    }
+
+    fun sexoSeleccionado(view: View) {
+        if (view is RadioButton) {
+            val checked = view.isChecked
+            
+            when (view.getId()) {
+                R.id.radioButtonMujer -> { 
+                    Toast.makeText(this, "Se ha seleccionado mujer", Toast.LENGTH_SHORT).show()
+                }
+                R.id.radioButtonHombre -> { 
+                    Toast.makeText(this, "Se ha seleccionado hombre", Toast.LENGTH_SHORT).show()
+                }
+                R.id.radioButtonIndefinido -> { 
+                    Toast.makeText(this, "Se ha seleccionado indefinido", Toast.LENGTH_SHORT).show()
                 }
             }
         }
