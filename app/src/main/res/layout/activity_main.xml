@@ -40,14 +40,15 @@
         android:layout_width="209dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/baseline_login_24"
+        android:drawableStart="@drawable/baseline_login_24"
         android:minHeight="48dp"
         android:text="@string/btn_login"
         android:onClick="clickOnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName"
+        tools:ignore="UsingOnClickInXml" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -57,7 +58,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chalkboard" />
+        app:srcCompat="@drawable/chalkboard"
+        android:contentDescription="TODO" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
