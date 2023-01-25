@@ -10,7 +10,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="@string/app_name"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,33 +19,17 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/name_hint"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="209dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:drawableStart="@drawable/baseline_login_24"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/baseline_login_24"
         android:minHeight="48dp"
         android:onClick="clickOnLogin"
         android:text="@string/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
         tools:ignore="UsingOnClickInXml" />
@@ -55,30 +39,40 @@
         android:layout_width="239dp"
         android:layout_height="224dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/chalkboard"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/chalkboard" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="editTextName,buttonLogin" />
+        app:constraint_referenced_ids="buttonLogin" />
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Edad"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/name_hint"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
